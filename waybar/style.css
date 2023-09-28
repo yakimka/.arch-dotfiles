@@ -152,8 +152,6 @@ window#waybar {
 }
 
 #mode {
-    /* background: @highlight; */
-    /* background: #dfdfdf; */
     border-bottom: 3px transparent;
     color:#ff4499;
     margin-left: 5px;
@@ -172,10 +170,6 @@ window#waybar {
     border-radius: 20px 0 0 20px;
 }
 
-/* #pulseaudio.muted { */
-/*     color: #ff4499; */
-/* } */
-/**/
 #pulseaudio.microphone {
     border-left: 0px;
     border-right: 0px;
@@ -183,11 +177,6 @@ window#waybar {
     padding-left: 0;
     border-radius: 0 20px 20px 0;
 }
-
-/* #pulseaudio.microphone.muted { */
-/*     color: #ff4499; */
-/* } */
-
 
 #temperature.critical {
     color: red;

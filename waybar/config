@@ -2,8 +2,6 @@
     "layer": "top",
     "position": "top",
     "margin": 5,
-
-    // If height property would be not present, it'd be calculated dynamically
     "height": 36,
 
     "modules-left": [
@@ -29,7 +27,6 @@
         "network#vpn"
     ],
 
-    // Modules
     "battery": {
         "states": {
             "warning": 30,
@@ -49,7 +46,7 @@
 
     "cpu": {
         "interval": 5,
-        "format": " {usage}% ({load})", // Icon: microchip
+        "format": " {usage}% ({load})",
         "states": {
             "warning": 70,
             "critical": 90
@@ -59,7 +56,7 @@
 
     "memory": {
         "interval": 5,
-        "format": " {}%", // Icon: memory
+        "format": " {}%",
         "on-click": "kitty -e htop",
         "states": {
             "warning": 70,
@@ -70,8 +67,8 @@
     "network": {
         "interval": 5,
         "tooltip": false,
-        "format-wifi": " ", // Icon: wifi
-        "format-ethernet": " ", // Icon: ethernet
+        "format-wifi": " ",
+        "format-ethernet": " ",
         "format-disconnected": "⚠  Disconnected",
         "on-click": "python3 -m wmtools.cli.wifi_menu"
     },
@@ -94,7 +91,7 @@
     },
 
     "pulseaudio": {
-        "scroll-step": 1, // %, can be a float
+        "scroll-step": 1,
         "format": "{icon} {volume}%",
         "format-bluetooth": "{volume}% {icon}  {format_source}",
         "format-bluetooth-muted": " {icon}  {format_source}",
@@ -125,8 +122,6 @@
         "scroll-step": 5
     },
 
-    // to use the weather module replace <your_location> with your city or town
-    // note: do not use spaces: new york would be newyork
     "custom/weather": {
         "exec": "~/.config/waybar/scripts/weather.sh kyiv",
         "return-type": "json",
@@ -143,12 +138,6 @@
         "format-en": "EN",
         "format-uk": "UA",
         "format-ru": "RU"
-    },
-
-    "custom/power": {
-        "format":"⏻",
-        "on-click": "exec ~/.config/waybar/scripts/power-menu.sh",
-        "tooltip": false
     },
 
     "custom/media": {
